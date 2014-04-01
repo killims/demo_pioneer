@@ -23,6 +23,6 @@ include(FindPackageHandleStandardArgs)
 # handle the QUIETLY and REQUIRED arguments and set LIBXML2_FOUND to TRUE
 # if all listed variables are TRUE
 find_package_handle_standard_args(OpenCV DEFAULT_MSG
-                                  OPENCV_LIBRARY OPENCV_INCLUDE_DIR)
+                                  OPENCV_LIBRARIES OPENCV_INCLUDE_DIRS)
 
-mark_as_advanced(OPENCV_INCLUDE_DIR OPENCV_LIBRARY )
+mark_as_advanced(OPENCV_INCLUDE_DIRS OPENCV_LIBRARIES )
