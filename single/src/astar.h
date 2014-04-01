@@ -49,7 +49,7 @@ class astar {
 	void build_path(const space_type& space, const state& start,
 			const state& goal);
 public:
-	static const double epsilon = 1e-6;
+    static constexpr double epsilon = 1e-6;
 
 	template<class Cost>
 	void compute_one(space_type& space, queue_type& open, const state& goal,

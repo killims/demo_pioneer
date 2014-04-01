@@ -272,7 +272,7 @@ int Dstar::computeShortestPath(double ms) {
  */
 bool Dstar::close(double x, double y) {
 
-	if (isinf(x) && isinf(y))
+    if (std::isinf(x) && std::isinf(y))
 		return true;
 	return (fabs(x - y) < 0.00001);
 
@@ -595,7 +595,7 @@ bool Dstar::replan(double ms) {
 	state cur = s_start;
 	state prev = cur;
 
-	if (isinf(getG(s_start))) {
+    if (std::isinf(getG(s_start))) {
 		//fprintf(stderr, "NO PATH TO GOAL\n");
 		return false;
 	}
